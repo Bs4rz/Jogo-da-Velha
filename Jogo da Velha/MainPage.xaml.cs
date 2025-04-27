@@ -7,6 +7,7 @@
         public MainPage()
         {
             InitializeComponent();
+            AtualizarCores();
         }
 
         private void Button_Cliked(object sender, EventArgs e)
@@ -24,7 +25,9 @@
             {
                 btn.Text = "O";
                 vez = "X";
+                
             }
+            AtualizarCores();
 
             bool vitoriaX = false;
             bool vitoriaO = false;
@@ -98,6 +101,19 @@
             btn10.IsEnabled = true;
             btn11.IsEnabled = true;
             btn12.IsEnabled = true;
+        }
+        private void AtualizarCores()
+        {
+            if (vez == "X")
+            {
+                lblX.TextColor = Colors.Purple; 
+                lblO.TextColor = Colors.Black; 
+            }
+            else
+            {
+                lblO.TextColor = Colors.Purple; 
+                lblX.TextColor = Colors.Black; 
+            }
         }
     }
 }

@@ -14,7 +14,7 @@
 
     <ContentPage.Resources>
         <Style TargetType="Button">
-            <Setter Property="BackgroundColor" Value="Transparent"/>
+            <Setter Property="BackgroundColor" Value="Gray"/>
             <Setter Property="CornerRadius" Value="15"/>
             <Setter Property="TextColor" Value="Black"/>
             <Setter Property="FontSize" Value="80"/>
@@ -23,27 +23,40 @@
         </Style>
     </ContentPage.Resources>
 
-    <Grid RowDefinitions="*, *, *, *"
+    <Grid RowDefinitions="*, *, *, *, *"
         ColumnDefinitions="*,*,*"
         ColumnSpacing="10" RowSpacing="10" Margin="10">
 
         <Label 
                Grid.Row="0" Grid.ColumnSpan="3" HorizontalOptions="Center"
                Text="Jogo da Velha"
-               FontSize="20"
+               FontSize="50"
                TextColor="Black"/>
+        <Label x:Name="lblX"
+           Grid.Row="1"  Grid.ColumnSpan="3" HorizontalOptions="End"
+           Text="X"
+           FontSize="50"
+           TextColor="Black"
+           Margin="0,0,60,0"
+           />
+        <Label x:Name="lblO"
+           Grid.Row="1" Grid.ColumnSpan="3" HorizontalOptions="End"
+           Text="O"
+           FontSize="50"
+           TextColor="Black"
+           />
 
-        <Button x:Name="btn10" Grid.Row="1" Grid.Column="0" Clicked="Button_Cliked" />
-        <Button x:Name="btn11" Grid.Row="1" Grid.Column="1" Clicked="Button_Cliked" />
-        <Button x:Name="btn12" Grid.Row="1" Grid.Column="2" Clicked="Button_Cliked" />
+        <Button x:Name="btn10" Grid.Row="2" Grid.Column="0" Clicked="Button_Cliked" />
+        <Button x:Name="btn11" Grid.Row="2" Grid.Column="1" Clicked="Button_Cliked" />
+        <Button x:Name="btn12" Grid.Row="2" Grid.Column="2" Clicked="Button_Cliked" />
 
-        <Button x:Name="btn7" Grid.Row="2" Grid.Column="0" Clicked="Button_Cliked" />
-        <Button x:Name="btn8" Grid.Row="2" Grid.Column="1" Clicked="Button_Cliked" />
-        <Button x:Name="btn9" Grid.Row="2" Grid.Column="2" Clicked="Button_Cliked" />
+        <Button x:Name="btn7" Grid.Row="3" Grid.Column="0" Clicked="Button_Cliked" />
+        <Button x:Name="btn8" Grid.Row="3" Grid.Column="1" Clicked="Button_Cliked" />
+        <Button x:Name="btn9" Grid.Row="3" Grid.Column="2" Clicked="Button_Cliked" />
 
-        <Button x:Name="btn4" Grid.Row="3" Grid.Column="0" Clicked="Button_Cliked" />
-        <Button x:Name="btn5" Grid.Row="3" Grid.Column="1" Clicked="Button_Cliked" />
-        <Button x:Name="btn6" Grid.Row="3" Grid.Column="2" Clicked="Button_Cliked" />
+        <Button x:Name="btn4" Grid.Row="4" Grid.Column="0" Clicked="Button_Cliked" />
+        <Button x:Name="btn5" Grid.Row="4" Grid.Column="1" Clicked="Button_Cliked" />
+        <Button x:Name="btn6" Grid.Row="4" Grid.Column="2" Clicked="Button_Cliked" />
 
     </Grid>
           
